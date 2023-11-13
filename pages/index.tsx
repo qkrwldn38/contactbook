@@ -1,9 +1,9 @@
 import { ConnectWallet, useAddress } from '@thirdweb-dev/react'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 import { NextPage } from 'next'
 import AddContact from '../components/add-contact'
 import ContactList from '../components/contact-list'
-
 const Home: NextPage = () => {
   const address = useAddress()
   return (
@@ -26,5 +26,4 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
 export default Home
